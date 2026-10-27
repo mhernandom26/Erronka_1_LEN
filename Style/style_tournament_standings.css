@@ -1,0 +1,83 @@
+/* Hau tournament_standings.html-ko espezifikoa da*/
+.blokea{
+    padding:0px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+
+}
+
+
+
+table{
+    width: 100%;
+    min-width: 1000px;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+td{
+    vertical-align: middle;
+    padding: 10px 6px;
+}
+
+.izena{
+    white-space: nowrap;
+    margin-left:2px;
+}
+
+.bi_partehartzaileak{
+    border-top: 1px solid black;
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+}
+
+.data{
+    margin: 0px;
+    margin-left: 2px;
+    padding: 0px;
+}
+
+.partehartzaile{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.emaitza{
+    flex-shrink: 0;
+    min-width: 20px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 0px 4px;
+    margin:3px;
+}
+
+/* Bertsio bertikala: horrela ipini dut pantaila txikietan formato normala apurtzen delako*/
+.taula-bertikala{
+    display: none;
+}
+
+.taula-bertikala h2{
+    text-align: center;
+}
+
+.taula-bertikala .blokea{
+    max-width: 360px;
+    margin: 0 auto 12px;
+}
+
+@media (max-width: 768px){
+    .taula-horizontala{
+        display: none;
+    }
+
+    .taula-bertikala{
+        display: block;
+        padding: 0 12px;
+    }
+}

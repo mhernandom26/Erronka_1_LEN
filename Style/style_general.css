@@ -1,0 +1,86 @@
+body {
+	background-color: aliceblue;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+p, a, h1, h2, h3, h4 {
+	font-family: ui-rounded, "Century Gothic", "Trebuchet MS", sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+.Goiko_nabigatzailea {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	background-color: rgb(142, 140, 145);
+	padding: 1rem;
+	border-radius: 8px;
+	width: max-content;
+	max-width: 95%;
+	margin: 1rem auto;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+.Beherako_nabigatzailea {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	background-color: blueviolet;
+	padding: 1rem;
+	border-radius: 8px;
+	width: max-content;      
+	max-width: 95%;          
+	margin: 1rem auto;       
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+.Barra-horizontala {
+	text-align: center;
+}
+
+.Goiko_estekak {
+	display: inline-block;
+	border-radius: 8px;
+	padding: 0.6em 1em;
+	background-color: beige;
+	color: black;
+	white-space: nowrap;
+}
+
+.Beheko_estekak {
+	display: inline-block;
+	background-color: rgb(220, 220, 220);
+	color: black;
+	padding: 0.6em 1em;
+	border-radius: 8px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#Cookie_textua {
+	text-align: center;
+}

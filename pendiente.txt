@@ -1,0 +1,14 @@
+1-Rellenar la informacion de gaming space, contact, tournament information y sarrera.
+2-Hacer que todas las paginas se adapten tanto a pantalla de pc como de movil.
+3-Cambiar tournament_standings, en vez de tablas usar grid y flex
+4-Que el boton de news y participants haga algo
+5-Poner la informacion de la empresa en el footer
+6-Que los enlaces del navegador de abajo manden a algun sitio
+7-Cambiar los placeholder por texto con sentido
+8-Cambiar a Diomande, Vinicius y Tebas por otros participantes
+8-Darle un diseño bonito a las paginas
+9-Mirar que tal va el seo 
+10-Mejorar el seo, accesibilidad, performance, etc... de lighthouse
+11-Buscar si hay alguna etiqueta repetida, no usada, mal escrita, etc...
+12-Hacer las explicaciones en las paginas y styles que hagan falta
+13-Preguntar si hace falta algo
