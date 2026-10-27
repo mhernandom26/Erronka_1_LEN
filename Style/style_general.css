@@ -5,6 +5,11 @@ body {
 	width: 100%;
 }
 
+main{
+	padding-left:1em;
+	padding-right:1em;
+}
+
 ul {
 	list-style: none;
 	padding-left: 0;
