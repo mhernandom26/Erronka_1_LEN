@@ -1,1 +1,6 @@
-/* Hau contact.html-ko espezifikoa da*/
+/* Hau contact.html-ko espezifikoa da */
+
+/* Testu-orria: lerro luzeegiak ekiditeko zabalera mugatuta */
+main {
+	max-width: 46em;
+}

@@ -1,83 +1,123 @@
-/* Hau tournament_standings.html-ko espezifikoa da*/
-.blokea{
-    padding:0px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
+/* Hau tournament_standings.html-ko espezifikoa da */
 
+main {
+	max-width: 90em;
 }
 
-
-
-table{
-    width: 100%;
-    min-width: 1000px;
-    border-collapse: collapse;
-    margin: 20px auto;
+/* Mugikorra eta tableta: errondak bata bestearen azpian, partidak sareta batean (zutabe gutxiago pantaila txikietan) */
+.erronda {
+	margin-bottom: 1.5em;
 }
 
-td{
-    vertical-align: middle;
-    padding: 10px 6px;
+.erronda h2 {
+	font-size: 1.25rem;
 }
 
-.izena{
-    white-space: nowrap;
-    margin-left:2px;
+.zatia {
+	color: #475569;
+	font-size: 0.9rem;
+	font-weight: normal;
 }
 
-.bi_partehartzaileak{
-    border-top: 1px solid black;
-    margin: 0px;
-    list-style: none;
-    padding: 0px;
+.partidak {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.5em;
 }
 
-.data{
-    margin: 0px;
-    margin-left: 2px;
-    padding: 0px;
+.blokea {
+	background-color: white;
+	border: 1px solid black;
 }
 
-.partehartzaile{
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
+.data {
+	margin: 0;
+	padding: 2px 6px;
+	font-size: 0.8rem;
+	color: #475569;
 }
 
-.emaitza{
-    flex-shrink: 0;
-    min-width: 20px;
-    text-align: center;
-    border: 1px solid black;
-    padding: 0px 4px;
-    margin:3px;
+.bi_partehartzaileak {
+	border-top: 1px solid black;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
-/* Bertsio bertikala: horrela ipini dut pantaila txikietan formato normala apurtzen delako*/
-.taula-bertikala{
-    display: none;
+.partehartzaile {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+	padding: 3px 6px;
 }
 
-.taula-bertikala h2{
-    text-align: center;
+.izena {
+	overflow-wrap: anywhere;
 }
 
-.taula-bertikala .blokea{
-    max-width: 360px;
-    margin: 0 auto 12px;
+.emaitza {
+	min-width: 20px;
+	text-align: center;
+	border: 1px solid black;
+	padding: 0 4px;
 }
 
-@media (max-width: 768px){
-    .taula-horizontala{
-        display: none;
-    }
+@media (min-width: 600px) {
+	.partidak {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
 
-    .taula-bertikala{
-        display: block;
-        padding: 0 12px;
-    }
+@media (min-width: 1000px) {
+	.partidak {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+/* PC: koadro osoa. Errondak zutabeetan (flex) eta partidak 8 errenkadako sareta batean:
+   lehen errondako partida bakoitza errenkada bat hartzen du, hurrengoak 2, 4 eta 8 (rowspan bezala) */
+@media (min-width: 1400px) {
+	.koadroa {
+		display: flex;
+		gap: 1em;
+	}
+
+	.erronda {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+
+	.erronda h2 {
+		font-size: 0.9rem;
+		text-align: center;
+	}
+
+	.zatia {
+		display: none;
+	}
+
+	.partidak {
+		flex: 1;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(8, 1fr);
+	}
+
+	.blokea {
+		align-self: center;
+	}
+
+	.laurdenak .blokea {
+		grid-row: span 2;
+	}
+
+	.finalerdiak .blokea {
+		grid-row: span 4;
+	}
+
+	.finala .blokea {
+		grid-row: span 8;
+	}
 }

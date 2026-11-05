@@ -5,42 +5,49 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Sailkapena eta emaitzak | GamerZone Santurtzi</title>
 		<meta name="description" content="Kontsultatu GameStop Santurtziko e-sports txapelketaren sailkapena eta partiden emaitzak.">
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="../Style/style_general.css">
 		<link rel="stylesheet" href="../Style/style_tournament_standings.css">
 		<link rel="icon" href="../Images/favicon.ico" type="image/x-icon">
 	</head>
 
 	<body>
+		<a class="Saltatu" href="#Eduki_nagusia">Joan edukira</a>
+
+		<!--Sare sozialak: beti ikusgai daude (style_general.css-ko position: fixed). Esteka bakoitzean jarri kanalaren benetako helbidea-->
+		<aside id="Sare_sozialak">
+			<ul>
+				<li><a href="https://x.com/" target="_blank" title="Twitter"><img src="../Images/icon_twitter.svg" alt="Twitter" width="28" height="28"></a></li>
+				<li><a href="https://www.youtube.com/" target="_blank" title="YouTube"><img src="../Images/icon_youtube.svg" alt="YouTube" width="28" height="28"></a></li>
+				<li><a href="https://www.instagram.com/" target="_blank" title="Instagram"><img src="../Images/icon_instagram.svg" alt="Instagram" width="28" height="28"></a></li>
+				<li><a href="https://www.twitch.tv/" target="_blank" title="Twitch"><img src="../Images/icon_twitch.svg" alt="Twitch" width="28" height="28"></a></li>
+			</ul>
+		</aside>
+
 
 		<header>
 			<h1>Txapelketaren sailkapena</h1>
 			<nav>
 				<ul class="Goiko_nabigatzailea">
-					<li><a class="Goiko_estekak" href="participants_general.html" title="Ikusi txapelketako parte-hartzaile guztiak">Parte-hartzaileak</a> </li>
-					<li><a class="Goiko_estekak" href="news.html" title="Irakurri txapelketaren azken berriak eta nobedadeak">Azken berriak</a> </li>
-					<li><a class="Goiko_estekak" href="tournament_information.html" title="Irakurri txapelketaren informazioa eta arauak">Txapelketaren informazioa</a> </li>
-					<li><a class="Goiko_estekak" href="gaming_space.html" title="Ezagutu Santurtziko gaming espazioa eta aretoak">Gaming espazioa</a> </li>
-					<li><a class="Goiko_estekak" href="contact.html" title="Jarri gurekin harremanetan edo eman izena txapelketan">Harremana ipini</a> </li>
-					<li><a class="Goiko_estekak" href="../index.html" title="Jarri gurekin harremanetan edo eman izena txapelketan">Sarrera</a> </li>
+					<li><a class="Goiko_estekak" href="../index.html" title="Itzuli hasierako orrira">Sarrera</a></li>
+					<li><a class="Goiko_estekak" href="participants_general.html" title="Ikusi txapelketako parte-hartzaile guztiak">Parte-hartzaileak</a></li>
+					<li><a class="Goiko_estekak" href="news.html" title="Irakurri txapelketaren azken berriak eta nobedadeak">Azken berriak</a></li>
+					<li><a class="Goiko_estekak" href="tournament_standings.html" title="Kontsultatu txapelketako sailkapena eta emaitzak" aria-current="page">Sailkapena</a></li>
+					<li><a class="Goiko_estekak" href="tournament_information.html" title="Irakurri txapelketaren informazioa eta arauak">Txapelketaren informazioa</a></li>
+					<li><a class="Goiko_estekak" href="gaming_space.html" title="Ezagutu Santurtziko gaming espazioa eta aretoak">Gaming espazioa</a></li>
+					<li><a class="Goiko_estekak" href="contact.html" title="Jarri gurekin harremanetan edo eman izena txapelketan">Harremana ipini</a></li>
 				</ul>
 			</nav>
 		</header>
 		
 		<hr>
 
-		<main>
-			<table class="taula-horizontala">
-				<tr>
-					<th>Final Zortzirenak</th>
-					<th>Final Laurdenak</th>
-					<th>Finalerdiak</th>
-					<th>Finala</th>
-					<th>Finalerdiak</th>
-					<th>Final Laurdenak</th>
-					<th>Final Zortirenak</th>
-				</tr>
-				<tr>
-					<td>
+		<main id="Eduki_nagusia">
+			<!--Partida bakoitza behin bakarrik dago. Ordena: ezkerreko aldea, finala, eskuineko aldea-->
+			<div class="koadroa">
+				<div class="erronda zortzirenak">
+					<h2>Final Zortzirenak <span class="zatia">- ezkerra</span></h2>
+					<div class="partidak">
 						<div class="blokea">
 							<p class="data">01/01/1970</p>
 							<ul class="bi_partehartzaileak">
@@ -48,64 +55,6 @@
 								<li class="partehartzaile"><span class="izena">A. Etxebarria</span><span class="emaitza">-</span></li>
 							</ul>
 						</div>
-					</td>
-					<td rowspan="2">
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">I. Goikoetxea</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">J. Fernández</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-					<td rowspan="4">
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">I. Goikoetxea</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">E. Arrieta</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-					<td rowspan="8">
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">I. Goikoetxea</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">R. Vidal</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-					<td rowspan="4">
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">H. Lekue</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">F. Azkarate</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-					<td rowspan="2">
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">H. Lekue</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">B. Ormaetxea</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-					<td>
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">H. Lekue</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">S. Elorza</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
 						<div class="blokea">
 							<p class="data">01/01/1970</p>
 							<ul class="bi_partehartzaileak">
@@ -113,19 +62,6 @@
 								<li class="partehartzaile"><span class="izena">J. Fernández</span><span class="emaitza">-</span></li>
 							</ul>
 						</div>
-					</td>
-					<td>
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">C. Iturbe</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">B. Ormaetxea</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
 						<div class="blokea">
 							<p class="data">01/01/1970</p>
 							<ul class="bi_partehartzaileak">
@@ -133,37 +69,6 @@
 								<li class="partehartzaile"><span class="izena">U. Larrañaga</span><span class="emaitza">-</span></li>
 							</ul>
 						</div>
-					</td>
-					<td rowspan="2">
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">E. Arrieta</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">N. Ibarra</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-					<td rowspan="2">
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">F. Azkarate</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">K. Garmendia</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-					<td>
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">F. Azkarate</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">T. Barrenetxea</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
 						<div class="blokea">
 							<p class="data">01/01/1970</p>
 							<ul class="bi_partehartzaileak">
@@ -171,19 +76,6 @@
 								<li class="partehartzaile"><span class="izena">N. Ibarra</span><span class="emaitza">-</span></li>
 							</ul>
 						</div>
-					</td>
-					<td>
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">V. Otxoa</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">K. Garmendia</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
 						<div class="blokea">
 							<p class="data">01/01/1970</p>
 							<ul class="bi_partehartzaileak">
@@ -191,55 +83,6 @@
 								<li class="partehartzaile"><span class="izena">L. Navarro</span><span class="emaitza">-</span></li>
 							</ul>
 						</div>
-					</td>
-					<td rowspan="2">
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">A. Aguirre</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">G. Bengoetxea</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-					<td rowspan="4">
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">A. Aguirre</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">I. Landa</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-					<td rowspan="4">
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">A. Salazar</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">R. Vidal</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-					<td rowspan="2">
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">A. Salazar</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">L. Castro</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-					<td>
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">A. Salazar</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">J. Iglesias</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
 						<div class="blokea">
 							<p class="data">01/01/1970</p>
 							<ul class="bi_partehartzaileak">
@@ -247,19 +90,6 @@
 								<li class="partehartzaile"><span class="izena">G. Bengoetxea</span><span class="emaitza">-</span></li>
 							</ul>
 						</div>
-					</td>
-					<td>
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">M. Herrero</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">L. Castro</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
 						<div class="blokea">
 							<p class="data">01/01/1970</p>
 							<ul class="bi_partehartzaileak">
@@ -267,37 +97,6 @@
 								<li class="partehartzaile"><span class="izena">R. Domínguez</span><span class="emaitza">-</span></li>
 							</ul>
 						</div>
-					</td>
-					<td rowspan="2">
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">I. Landa</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">P. Arana</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-					<td rowspan="2">
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">R. Vidal</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">I. Moreno</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-					<td>
-						<div class="blokea">
-							<p class="data">01/01/1970</p>
-							<ul class="bi_partehartzaileak">
-								<li class="partehartzaile"><span class="izena">R. Vidal</span><span class="emaitza">-</span></li>
-								<li class="partehartzaile"><span class="izena">E. Pascual</span><span class="emaitza">-</span></li>
-							</ul>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
 						<div class="blokea">
 							<p class="data">01/01/1970</p>
 							<ul class="bi_partehartzaileak">
@@ -305,8 +104,176 @@
 								<li class="partehartzaile"><span class="izena">P. Arana</span><span class="emaitza">-</span></li>
 							</ul>
 						</div>
-					</td>
-					<td>
+					</div>
+				</div>
+				<div class="erronda laurdenak">
+					<h2>Final Laurdenak <span class="zatia">- ezkerra</span></h2>
+					<div class="partidak">
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">I. Goikoetxea</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">J. Fernández</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">E. Arrieta</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">N. Ibarra</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">A. Aguirre</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">G. Bengoetxea</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">I. Landa</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">P. Arana</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="erronda finalerdiak">
+					<h2>Finalerdiak <span class="zatia">- ezkerra</span></h2>
+					<div class="partidak">
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">I. Goikoetxea</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">E. Arrieta</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">A. Aguirre</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">I. Landa</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="erronda finala">
+					<h2>Finala</h2>
+					<div class="partidak">
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">I. Goikoetxea</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">R. Vidal</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="erronda finalerdiak">
+					<h2>Finalerdiak <span class="zatia">- eskuina</span></h2>
+					<div class="partidak">
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">H. Lekue</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">F. Azkarate</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">A. Salazar</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">R. Vidal</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="erronda laurdenak">
+					<h2>Final Laurdenak <span class="zatia">- eskuina</span></h2>
+					<div class="partidak">
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">H. Lekue</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">B. Ormaetxea</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">F. Azkarate</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">K. Garmendia</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">A. Salazar</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">L. Castro</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">R. Vidal</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">I. Moreno</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="erronda zortzirenak">
+					<h2>Final Zortzirenak <span class="zatia">- eskuina</span></h2>
+					<div class="partidak">
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">H. Lekue</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">S. Elorza</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">C. Iturbe</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">B. Ormaetxea</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">F. Azkarate</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">T. Barrenetxea</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">V. Otxoa</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">K. Garmendia</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">A. Salazar</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">J. Iglesias</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">M. Herrero</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">L. Castro</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
+						<div class="blokea">
+							<p class="data">01/01/1970</p>
+							<ul class="bi_partehartzaileak">
+								<li class="partehartzaile"><span class="izena">R. Vidal</span><span class="emaitza">-</span></li>
+								<li class="partehartzaile"><span class="izena">E. Pascual</span><span class="emaitza">-</span></li>
+							</ul>
+						</div>
 						<div class="blokea">
 							<p class="data">01/01/1970</p>
 							<ul class="bi_partehartzaileak">
@@ -314,217 +281,7 @@
 								<li class="partehartzaile"><span class="izena">I. Moreno</span><span class="emaitza">-</span></li>
 							</ul>
 						</div>
-					</td>
-				</tr>
-			</table>
-
-			<div class="taula-bertikala">
-				<h2>Final Zortzirenak</h2>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">I. Goikoetxea</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">A. Etxebarria</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">M. Urkijo</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">J. Fernández</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">E. Arrieta</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">U. Larrañaga</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">O. Ruiz</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">N. Ibarra</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">A. Aguirre</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">L. Navarro</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">D. Uriarte</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">G. Bengoetxea</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">I. Landa</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">R. Domínguez</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">X. Gorostiza</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">P. Arana</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">H. Lekue</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">S. Elorza</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">C. Iturbe</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">B. Ormaetxea</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">F. Azkarate</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">T. Barrenetxea</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">V. Otxoa</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">K. Garmendia</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">A. Salazar</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">J. Iglesias</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">M. Herrero</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">L. Castro</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">R. Vidal</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">E. Pascual</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">D. Santos</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">I. Moreno</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<h2>Final Laurdenak</h2>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">I. Goikoetxea</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">J. Fernández</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">E. Arrieta</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">N. Ibarra</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">A. Aguirre</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">G. Bengoetxea</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">I. Landa</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">P. Arana</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">H. Lekue</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">B. Ormaetxea</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">F. Azkarate</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">K. Garmendia</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">A. Salazar</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">L. Castro</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">R. Vidal</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">I. Moreno</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<h2>Finalerdiak</h2>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">I. Goikoetxea</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">E. Arrieta</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">A. Aguirre</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">I. Landa</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">H. Lekue</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">F. Azkarate</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">A. Salazar</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">R. Vidal</span><span class="emaitza">-</span></li>
-					</ul>
-				</div>
-				<h2>Finala</h2>
-				<div class="blokea">
-					<p class="data">01/01/1970</p>
-					<ul class="bi_partehartzaileak">
-						<li class="partehartzaile"><span class="izena">I. Goikoetxea</span><span class="emaitza">-</span></li>
-						<li class="partehartzaile"><span class="izena">R. Vidal</span><span class="emaitza">-</span></li>
-					</ul>
+					</div>
 				</div>
 			</div>
 		</main>
@@ -532,18 +289,29 @@
 		<hr>
 
 		<footer>
-
+			<!--Enpresaren informazioa-->
+			<address id="Enpresa_datuak">
+				<p><strong>GameStop Santurtzi</strong></p>
+				<p>[DENDAREN HELBIDEA], Santurtzi (Bizkaia)</p>
+				<p>Telefonoa: [TELEFONOA] | Emaila: <a href="mailto:placeholder@gmail.com">placeholder@gmail.com</a></p>
+			</address>
 			<nav>
 				<ul class="Beherako_nabigatzailea">
-					<li><a class="Beheko_estekak" href="../Pages/placeholder.html">placeholder</a> </li>
-					<li><a class="Beheko_estekak" href="../Pages/placeholder.html">placeholder</a> </li>
-					<li><a class="Beheko_estekak" href="../Pages/placeholder.html">placeholder</a> </li>
-					<li><a class="Beheko_estekak" href="../Pages/placeholder.html">placeholder</a> </li>
-					<li><a class="Beheko_estekak" href="../Pages/placeholder.html">placeholder</a> </li>
+					<li><a class="Beheko_estekak" href="tournament_information.html" title="Irakurri txapelketaren informazioa eta arauak">Txapelketaren arauak</a> </li>
+					<li><a class="Beheko_estekak" href="tournament_standings.html" title="Kontsultatu txapelketako sailkapena eta emaitzak">Sailkapena</a> </li>
+					<li><a class="Beheko_estekak" href="gaming_space.html" title="Ezagutu Santurtziko gaming espazioa eta aretoak">Gaming espazioa</a> </li>
+					<li><a class="Beheko_estekak" href="contact.html" title="Jarri gurekin harremanetan edo eman izena txapelketan">Harremana</a> </li>
 				</ul>
 			</nav>
-			<p id="Cookie_textua">&copy; GameStop <a href="cookie_policies.html">Cookie politika</a></p>
+			<p id="Cookie_textua">© 2026 GameStop Santurtzi | <a href="cookie_policies.html">Cookie politika</a></p>
 		</footer>
+
+		<!--Cookie oharra: onartu arte ikusgai dago. Kutxa markatzean (Onartu) CSS-ak ezkutatzen du, JavaScript gabe-->
+		<input type="checkbox" id="Cookie_onartu">
+		<div id="Cookie_oharra" role="region">
+			<p>Webgune honek ez du jarraipen-cookierik erabiltzen. Informazio gehiago <a href="cookie_policies.html">cookie politikan</a>.</p>
+			<label for="Cookie_onartu" id="Cookie_botoia">Onartu</label>
+		</div>
 
 	</body>
 </html>

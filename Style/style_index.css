@@ -1,0 +1,157 @@
+/* Hau index.html-ko espezifikoa da */
+
+#Atal_nagusia {
+	max-width: 52em;
+}
+
+#Sarrera figure {
+	margin: 1.5em 0;
+	text-align: center;
+}
+
+#Sarrera video {
+	width: 100%;
+	max-width: 40em;
+}
+
+#Sarrera figcaption {
+	color: #475569;
+	font-size: 0.9rem;
+}
+
+#Atal_nagusia li {
+	margin-bottom: 0.4em;
+}
+
+/* Parte-hartzaileak: hiru lehiakide ondoz ondo */
+#Lehiakideak {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1em;
+}
+
+#Lehiakideak figure {
+	margin: 0;
+	text-align: center;
+}
+
+#Lehiakideak img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border: 1px solid black;
+	border-radius: 0.5em;
+}
+
+/* Berriak: berri nabarmendua ezkerrean, beste biak eskuinean */
+#Berriak_blokea {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 1em;
+}
+
+#Berriak_blokea article {
+	background-color: white;
+	border: 1px solid black;
+	padding: 1em;
+}
+
+#Berriak_blokea img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+#Berriak_blokea h3 {
+	margin-bottom: 0;
+}
+
+#Berri_nabarmendua {
+	align-self: start;
+}
+
+#Berri_nabarmendua h3 {
+	font-size: 1.4rem;
+}
+
+#Beste_berriak {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+/* Sailkapen taula */
+#Sailkapen_taula {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: white;
+}
+
+#Sailkapen_taula caption {
+	text-align: left;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+}
+
+#Sailkapen_taula th,
+#Sailkapen_taula td {
+	border: 1px solid black;
+	padding: 0.4em 0.6em;
+	text-align: left;
+}
+
+#Sailkapen_taula th {
+	background-color: #e2e8f0;
+}
+
+/* Formularioa */
+form p {
+	margin-bottom: 1em;
+}
+
+input,
+select,
+textarea {
+	font: inherit;
+	width: 90%;
+	max-width: 30em;
+	padding: 0.5em;
+	border: 1px solid #475569;
+	border-radius: 4px;
+}
+
+textarea {
+	max-width: 100%;
+}
+
+@media (max-width: 768px) {
+	#Sarrera video {
+		max-width: 100%;
+	}
+
+	#Lehiakideak,
+	#Berriak_blokea {
+		grid-template-columns: 1fr;
+	}
+
+	#Lehiakideak figure {
+		max-width: 16em;
+		margin: 0 auto;
+	}
+
+	#Sailkapen_taula {
+		font-size: 0.9rem;
+	}
+}
+
+/* Mugikor oso txikietan taulak ez du pantaila gainezkatu behar */
+@media (max-width: 400px) {
+	#Sailkapen_taula {
+		font-size: 0.75rem;
+	}
+
+	#Sailkapen_taula th,
+	#Sailkapen_taula td {
+		padding: 0.3em 0.3em;
+	}
+}
