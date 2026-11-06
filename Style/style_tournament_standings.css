@@ -14,7 +14,7 @@ main {
 }
 
 .zatia {
-	color: #475569;
+	color: #3f5185;
 	font-size: 0.9rem;
 	font-weight: normal;
 }
@@ -27,18 +27,18 @@ main {
 
 .blokea {
 	background-color: white;
-	border: 1px solid black;
+	border: 1px solid #0a1a3f;
 }
 
 .data {
 	margin: 0;
 	padding: 2px 6px;
 	font-size: 0.8rem;
-	color: #475569;
+	color: #3f5185;
 }
 
 .bi_partehartzaileak {
-	border-top: 1px solid black;
+	border-top: 1px solid #0a1a3f;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -59,7 +59,7 @@ main {
 .emaitza {
 	min-width: 20px;
 	text-align: center;
-	border: 1px solid black;
+	border: 1px solid #0a1a3f;
 	padding: 0 4px;
 }
 
@@ -75,8 +75,7 @@ main {
 	}
 }
 
-/* PC: koadro osoa. Errondak zutabeetan (flex) eta partidak 8 errenkadako sareta batean:
-   lehen errondako partida bakoitza errenkada bat hartzen du, hurrengoak 2, 4 eta 8 (rowspan bezala) */
+/* PC: koadro osoa agertzea eta mugikorrean sailkapena lista bezala agertzen da */
 @media (min-width: 1400px) {
 	.koadroa {
 		display: flex;

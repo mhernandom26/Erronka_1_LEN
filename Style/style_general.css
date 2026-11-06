@@ -1,9 +1,12 @@
+/* Hau estilo rokorra da */
+
 body {
-	background-color: #f8fafc;
-	color: #0f172a;
+	background-color: #f3f7ff;
+	color: #0a1a3f;
 	font-family: "Plus Jakarta Sans", Arial, sans-serif;
 	line-height: 1.5;
 	margin: 0;
+	padding-bottom: 3em;
 }
 
 main {
@@ -27,13 +30,13 @@ section {
 }
 
 section h2 {
-	border-bottom: 2px solid #6a33c4;
+	border-bottom: 2px solid #0057ff;
 	padding-bottom: 0.2em;
 }
 
 hr {
 	border: 0;
-	border-top: 1px solid #cbd5e1;
+	border-top: 1px solid #c3d4f5;
 	margin: 0;
 }
 
@@ -47,7 +50,7 @@ img {
 }
 
 a {
-	color: #6d28d9;
+	color: #0057ff;
 	text-decoration: none;
 }
 
@@ -57,7 +60,7 @@ main p a {
 
 button {
 	font: inherit;
-	background-color: #6d28d9;
+	background-color: #0057ff;
 	color: white;
 	border: 0;
 	border-radius: 4px;
@@ -65,7 +68,6 @@ button {
 	cursor: pointer;
 }
 
-/* "nav ul" bakarrik: eduki-zerrendek biletak izan behar dituzte */
 nav ul {
 	list-style: none;
 	padding-left: 0;
@@ -84,16 +86,15 @@ nav ul {
 
 .Goiko_estekak {
 	display: inline-block;
-	background-color: #e2e8f0;
-	color: #0f172a;
+	background-color: #dce8ff;
+	color: #0a1a3f;
 	padding: 0.5em 1em;
 	border-radius: 4px;
 	white-space: nowrap;
 }
 
-.Goiko_estekak[aria-current="page"],
-.Goiko_estekak:hover {
-	background-color: #6d28d9;
+.Goiko_estekak, .Goiko_estekak:hover {
+	background-color: #0057ff;
 	color: white;
 }
 
@@ -119,46 +120,44 @@ footer {
 }
 
 .Beheko_estekak {
-	color: #475569;
+	color: #3f5185;
 	font-size: 0.9rem;
 }
 
 #Cookie_textua {
 	text-align: center;
-	color: #475569;
+	color: #3f5185;
 	font-size: 0.9rem;
 	margin: 0;
 }
 
 #Cookie_textua a {
-	color: #475569;
+	color: #3f5185;
 	text-decoration: underline;
 }
 
-/* Sare sozialak: beti ikusgai, eskuineko ertzean */
+/* Sare sozialak: beti ikusgai, pantailaren behealdean finkatuta */
 #Sare_sozialak {
 	position: fixed;
+	bottom: 0;
+	left: 0;
 	right: 0;
-	top: 40%;
+	height: 3em;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: white;
-	border: 1px solid #cbd5e1;
-	border-right: 0;
-	border-radius: 4px 0 0 4px;
-	padding: 0.4em;
+	border-top: 1px solid #c3d4f5;
+	z-index: 5;
 }
 
 #Sare_sozialak ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-}
-
-#Sare_sozialak li {
-	margin-bottom: 0.4em;
-}
-
-#Sare_sozialak li:last-child {
-	margin-bottom: 0;
+	display: flex;
+	gap: 1.5em;
 }
 
 #Sare_sozialak img {
@@ -167,8 +166,7 @@ footer {
 	height: 28px;
 }
 
-/* Cookie oharra: orriaren amaieran dago, baina pantailaren behealdean itsatsita geratzen da onartu arte.
-   Kutxa markatzean (Onartu) ezkutatzen da. Kutxa ez da ikusten, baina teklatuarekin erabil daiteke */
+/* Cookie oharra*/
 #Cookie_onartu {
 	position: fixed;
 	top: 0;
@@ -182,8 +180,8 @@ footer {
 
 #Cookie_oharra {
 	position: sticky;
-	bottom: 0;
-	background-color: #0f172a;
+	bottom: 3em;
+	background-color: #0a1a3f;
 	color: white;
 	padding: 1em;
 	display: flex;
@@ -203,7 +201,7 @@ footer {
 }
 
 #Cookie_botoia {
-	background-color: #6d28d9;
+	background-color: #0057ff;
 	color: white;
 	border-radius: 4px;
 	padding: 0.7em 1.2em;
@@ -212,7 +210,7 @@ footer {
 
 @media (max-width: 768px) {
 	main {
-		padding: 1em 2.5em 1em 0.5em;
+		padding: 1em;
 	}
 
 	#Sare_sozialak img {
@@ -240,7 +238,7 @@ footer {
 	position: absolute;
 	left: 0.5em;
 	top: -4em;
-	background-color: #0f172a;
+	background-color: #0a1a3f;
 	color: white;
 	padding: 0.5em 1em;
 	border-radius: 4px;

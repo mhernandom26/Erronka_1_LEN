@@ -1,15 +1,14 @@
 /* Hau news.html-ko espezifikoa da */
 
-#News_nagusia {
+#Berrien_edukia {
 	display: grid;
 	grid-gap: 1em;
 	grid-template-columns: 2fr 1fr;
 }
 
 #Berria1 {
-	align-self: start;
 	background-color: white;
-	border: 1px solid black;
+	border: 1px solid #0a1a3f;
 	padding: 1em;
 }
 
@@ -24,21 +23,25 @@
 }
 
 #Berri_nagusien_idazlea {
-	color: #475569;
+	color: #3f5185;
 }
 
 #Alboko_berriko_blokea {
 	background-color: white;
-	border: 1px solid black;
+	border: 1px solid #0a1a3f;
 	padding: 1em;
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
 }
 
-#Berria3,
+#Berria3 {
+	border-top: 1px solid #0a1a3f;
+	padding-top: 1em;
+}
+
 #Berria4 {
-	border-top: 1px solid black;
+	border-top: 1px solid #0a1a3f;
 	padding-top: 1em;
 }
 
@@ -50,11 +53,24 @@
 
 .Idazlea {
 	text-align: right;
-	color: #475569;
+	color: #3f5185;
+}
+
+#Berria1 p {
+	font-size: 1.15rem;
+	line-height: 1.7;
+}
+
+#Berri_nagusien_tituloa {
+	font-size: 2rem;
+}
+
+#Berri_nagusien_idazlea {
+	font-size: 1rem;
 }
 
 @media (max-width: 768px) {
-	#News_nagusia {
+	#Berrien_edukia {
 		grid-template-columns: 1fr;
 	}
 

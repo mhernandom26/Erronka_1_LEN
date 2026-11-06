@@ -15,7 +15,7 @@
 }
 
 #Sarrera figcaption {
-	color: #475569;
+	color: #3f5185;
 	font-size: 0.9rem;
 }
 
@@ -23,7 +23,7 @@
 	margin-bottom: 0.4em;
 }
 
-/* Parte-hartzaileak: hiru lehiakide ondoz ondo */
+/* Parte-hartzaileak: hiru lehiakide bakoitza besteen alboan */
 #Lehiakideak {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -39,7 +39,7 @@
 	display: block;
 	width: 100%;
 	height: auto;
-	border: 1px solid black;
+	border: 1px solid #0a1a3f;
 	border-radius: 0.5em;
 }
 
@@ -52,7 +52,7 @@
 
 #Berriak_blokea article {
 	background-color: white;
-	border: 1px solid black;
+	border: 1px solid #0a1a3f;
 	padding: 1em;
 }
 
@@ -95,13 +95,13 @@
 
 #Sailkapen_taula th,
 #Sailkapen_taula td {
-	border: 1px solid black;
+	border: 1px solid #0a1a3f;
 	padding: 0.4em 0.6em;
 	text-align: left;
 }
 
 #Sailkapen_taula th {
-	background-color: #e2e8f0;
+	background-color: #dce8ff;
 }
 
 /* Formularioa */
@@ -116,7 +116,7 @@ textarea {
 	width: 90%;
 	max-width: 30em;
 	padding: 0.5em;
-	border: 1px solid #475569;
+	border: 1px solid #3f5185;
 	border-radius: 4px;
 }
 
