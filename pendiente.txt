@@ -12,3 +12,4 @@
 12-Hacer las explicaciones en las paginas y styles que hagan falta (Hecho)
 13-Preguntar si hace falta lo de javascript para guardar las cookies o si con solo el banner vale
 14-Preguntar si hace falta algo
+15-Hacer un modo oscuro?
