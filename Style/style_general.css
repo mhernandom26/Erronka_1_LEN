@@ -60,10 +60,6 @@ a {
 	text-decoration: none;
 }
 
-main p a {
-	text-decoration: underline;
-}
-
 button {
 	font: inherit;
 	background-color: #0057ff;
@@ -92,16 +88,11 @@ nav ul {
 
 .Goiko_estekak {
 	display: inline-block;
-	background-color: #dce8ff;
-	color: #0a1a3f;
+	background-color: #0057ff;
+	color: white;
 	padding: 0.5em 1em;
 	border-radius: 4px;
 	white-space: nowrap;
-}
-
-.Goiko_estekak{
-	background-color: #0057ff;
-	color: white;
 }
 
 .Goiko_estekak:hover {
