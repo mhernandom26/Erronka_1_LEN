@@ -60,6 +60,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 button {
 	font: inherit;
 	background-color: #0057ff;
