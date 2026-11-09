@@ -49,6 +49,12 @@ img {
 	height: auto;
 }
 
+#weborri_barruko_logoa {
+	margin: 0.5em;
+	border: 3px solid #f9fbff;
+	border-radius: 50%;
+}
+
 a {
 	color: #0057ff;
 	text-decoration: none;
