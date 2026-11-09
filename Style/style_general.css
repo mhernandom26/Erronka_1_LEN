@@ -93,9 +93,13 @@ nav ul {
 	white-space: nowrap;
 }
 
-.Goiko_estekak, .Goiko_estekak:hover {
+.Goiko_estekak{
 	background-color: #0057ff;
 	color: white;
+}
+
+.Goiko_estekak:hover {
+	background-color: #003f99;
 }
 
 footer {
@@ -122,6 +126,12 @@ footer {
 .Beheko_estekak {
 	color: #3f5185;
 	font-size: 0.9rem;
+	padding: 0.3em 0.6em;
+}
+
+.Beheko_estekak:hover {
+	border: 1px solid #3f5185;
+	border-radius: 4px;
 }
 
 #Cookie_textua {
