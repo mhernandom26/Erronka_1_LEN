@@ -1,4 +1,4 @@
-/* Hau tournament_standings.html-ko espezifikoa da */
+/* Hau tournament-standings.html-ko espezifikoa da */
 
 main {
 	max-width: 90em;
@@ -37,7 +37,7 @@ main {
 	color: #3f5185;
 }
 
-.bi_partehartzaileak {
+.bi-partehartzaileak {
 	border-top: 1px solid #0a1a3f;
 	margin: 0;
 	padding: 0;

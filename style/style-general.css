@@ -49,7 +49,7 @@ img {
 	height: auto;
 }
 
-#weborri_barruko_logoa {
+#weborri-barruko-logoa {
 	margin: 0.5em;
 	border: 3px solid #f9fbff;
 	border-radius: 50%;
@@ -80,7 +80,7 @@ nav ul {
 	margin: 0;
 }
 
-.Goiko_nabigatzailea {
+.Goiko-nabigatzailea {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -90,7 +90,7 @@ nav ul {
 	padding: 0 1em;
 }
 
-.Goiko_estekak {
+.Goiko-estekak {
 	display: inline-block;
 	background-color: #0057ff;
 	color: white;
@@ -99,7 +99,7 @@ nav ul {
 	white-space: nowrap;
 }
 
-.Goiko_estekak:hover {
+.Goiko-estekak:hover {
 	background-color: #003f99;
 }
 
@@ -107,16 +107,16 @@ footer {
 	padding: 1em;
 }
 
-#Enpresa_datuak {
+#Enpresa-datuak {
 	text-align: center;
 	margin-bottom: 1em;
 }
 
-#Enpresa_datuak p {
+#Enpresa-datuak p {
 	margin: 0;
 }
 
-.Beherako_nabigatzailea {
+.Beherako-nabigatzailea {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -124,31 +124,31 @@ footer {
 	margin: 0 0 1em;
 }
 
-.Beheko_estekak {
+.Beheko-estekak {
 	color: #3f5185;
 	font-size: 0.9rem;
 	padding: 0.3em 0.6em;
 }
 
-.Beheko_estekak:hover {
+.Beheko-estekak:hover {
 	border: 1px solid #3f5185;
 	border-radius: 4px;
 }
 
-#Cookie_textua {
+#Cookie-textua {
 	text-align: center;
 	color: #3f5185;
 	font-size: 0.9rem;
 	margin: 0;
 }
 
-#Cookie_textua a {
+#Cookie-textua a {
 	color: #3f5185;
 	text-decoration: underline;
 }
 
 /* Sare sozialak: beti ikusgai, pantailaren behealdean finkatuta */
-#Sare_sozialak {
+#Sare-sozialak {
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -162,7 +162,7 @@ footer {
 	border-top: 1px solid #c3d4f5;
 }
 
-#Sare_sozialak ul {
+#Sare-sozialak ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -170,7 +170,7 @@ footer {
 	gap: 1.5em;
 }
 
-#Sare_sozialak img {
+#Sare-sozialak img {
 	display: block;
 	width: 28px;
 	height: 28px;
@@ -227,7 +227,7 @@ footer {
 		padding: 1em;
 	}
 
-	#Sare_sozialak img {
+	#Sare-sozialak img {
 		width: 24px;
 		height: 24px;
 	}
@@ -240,7 +240,7 @@ footer {
 		font-size: 1.25rem;
 	}
 
-	.Goiko_estekak {
+	.Goiko-estekak {
 		padding: 0.4em 0.8em;
 		font-size: 0.9rem;
 		white-space: normal;

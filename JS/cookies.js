@@ -2,7 +2,7 @@
 (function () {
 	"use strict";
 
-	var gakoa = "cookie_onarpena";
+	var gakoa = "cookie-onarpena";
 	var blokea = document.getElementById("cookies");
 	if (!blokea) { return; }
 

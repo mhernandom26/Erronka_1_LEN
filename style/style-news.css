@@ -1,6 +1,6 @@
 /* Hau news.html-ko espezifikoa da */
 
-#Berrien_edukia {
+#Berrien-edukia {
 	display: grid;
 	grid-gap: 1em;
 	grid-template-columns: 2fr 1fr;
@@ -12,21 +12,21 @@
 	padding: 1em;
 }
 
-#Berri_nagusien_irudia {
+#Berri-nagusien-irudia {
 	display: block;
 	height: auto;
 	width: 100%;
 }
 
-#Berri_nagusien_tituloa {
+#Berri-nagusien-tituloa {
 	font-size: x-large;
 }
 
-#Berri_nagusien_idazlea {
+#Berri-nagusien-idazlea {
 	color: #3f5185;
 }
 
-#Alboko_berriko_blokea {
+#Alboko-berriko-blokea {
 	background-color: white;
 	border: 1px solid #0a1a3f;
 	padding: 1em;
@@ -45,7 +45,7 @@
 	padding-top: 1em;
 }
 
-.Berri_albokoen_irudia {
+.Berri-albokoen-irudia {
 	display: block;
 	height: auto;
 	width: 50%;
@@ -61,24 +61,24 @@
 	line-height: 1.7;
 }
 
-#Berri_nagusien_tituloa {
+#Berri-nagusien-tituloa {
 	font-size: 2rem;
 }
 
-#Berri_nagusien_idazlea {
+#Berri-nagusien-idazlea {
 	font-size: 1rem;
 }
 
 @media (max-width: 768px) {
-	#Berrien_edukia {
+	#Berrien-edukia {
 		grid-template-columns: 1fr;
 	}
 
-	#Alboko_berriko_blokea {
+	#Alboko-berriko-blokea {
 		text-align: center;
 	}
 
-	.Berri_albokoen_irudia {
+	.Berri-albokoen-irudia {
 		width: 100%;
 	}
 

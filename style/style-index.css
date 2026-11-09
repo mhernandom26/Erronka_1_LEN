@@ -1,6 +1,6 @@
 /* Hau index.html-ko espezifikoa da */
 
-#Atal_nagusia {
+#Atal-nagusia {
 	max-width: 52em;
 }
 
@@ -19,7 +19,7 @@
 	font-size: 0.9rem;
 }
 
-#Atal_nagusia li {
+#Atal-nagusia li {
 	margin-bottom: 0.4em;
 }
 
@@ -44,62 +44,62 @@
 }
 
 /* Berriak: berri nabarmendua ezkerrean, beste biak eskuinean */
-#Berriak_blokea {
+#Berriak-blokea {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	gap: 1em;
 }
 
-#Berriak_blokea article {
+#Berriak-blokea article {
 	background-color: white;
 	border: 1px solid #0a1a3f;
 	padding: 1em;
 }
 
-#Berriak_blokea img {
+#Berriak-blokea img {
 	display: block;
 	width: 100%;
 	height: auto;
 }
 
-#Berriak_blokea h3 {
+#Berriak-blokea h3 {
 	margin-bottom: 0;
 }
 
-#Berri_nabarmendua {
+#Berri-nabarmendua {
 	align-self: start;
 }
 
-#Berri_nabarmendua h3 {
+#Berri-nabarmendua h3 {
 	font-size: 1.4rem;
 }
 
-#Beste_berriak {
+#Beste-berriak {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
 }
 
 /* Sailkapen taula */
-#Sailkapen_taula {
+#Sailkapen-taula {
 	width: 100%;
 	border-collapse: collapse;
 	background-color: white;
 }
 
-#Sailkapen_taula caption {
+#Sailkapen-taula caption {
 	text-align: left;
 	font-weight: bold;
 	padding-bottom: 0.5em;
 }
 
-#Sailkapen_taula th, #Sailkapen_taula td {
+#Sailkapen-taula th, #Sailkapen-taula td {
 	border: 1px solid #0a1a3f;
 	padding: 0.4em 0.6em;
 	text-align: left;
 }
 
-#Sailkapen_taula th {
+#Sailkapen-taula th {
 	background-color: #dce8ff;
 }
 
@@ -127,7 +127,7 @@ textarea {
 	}
 
 	#Lehiakideak,
-	#Berriak_blokea {
+	#Berriak-blokea {
 		grid-template-columns: 1fr;
 	}
 
@@ -136,19 +136,19 @@ textarea {
 		margin: 0 auto;
 	}
 
-	#Sailkapen_taula {
+	#Sailkapen-taula {
 		font-size: 0.9rem;
 	}
 }
 
 /* Mugikor oso txikietan taulak ez du pantaila gainezkatu behar */
 @media (max-width: 400px) {
-	#Sailkapen_taula {
+	#Sailkapen-taula {
 		font-size: 0.75rem;
 	}
 
-	#Sailkapen_taula th,
-	#Sailkapen_taula td {
+	#Sailkapen-taula th,
+	#Sailkapen-taula td {
 		padding: 0.3em 0.3em;
 	}
 }

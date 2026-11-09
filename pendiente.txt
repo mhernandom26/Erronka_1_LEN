@@ -1,6 +1,6 @@
 1-Rellenar la informacion de gaming space, contact, tournament information y sarrera. (Hecho)
 2-Hacer que todas las paginas se adapten tanto a pantalla de pc como de movil. (Hecho)
-3-Cambiar tournament_standings, en vez de tablas usar grid y flex (Hecho)
+3-Cambiar tournament-standings, en vez de tablas usar grid y flex (Hecho)
 5-Poner la informacion de la empresa en el footer  (Hecho)
 6-Que los enlaces del navegador de abajo manden a algun sitio (Hecho)
 7-Cambiar los placeholder por texto con sentido (Hecho)
