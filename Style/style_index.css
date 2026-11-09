@@ -93,8 +93,7 @@
 	padding-bottom: 0.5em;
 }
 
-#Sailkapen_taula th,
-#Sailkapen_taula td {
+#Sailkapen_taula th, #Sailkapen_taula td {
 	border: 1px solid #0a1a3f;
 	padding: 0.4em 0.6em;
 	text-align: left;
@@ -109,9 +108,7 @@ form p {
 	margin-bottom: 1em;
 }
 
-input,
-select,
-textarea {
+input, select, textarea {
 	font: inherit;
 	width: 90%;
 	max-width: 30em;

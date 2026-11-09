@@ -160,7 +160,6 @@ footer {
 	justify-content: center;
 	background-color: white;
 	border-top: 1px solid #c3d4f5;
-	z-index: 5;
 }
 
 #Sare_sozialak ul {
@@ -216,7 +215,6 @@ footer {
 	color: white;
 	border-radius: 4px;
 	padding: 0.7em 1.2em;
-	cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -253,7 +251,6 @@ footer {
 	color: white;
 	padding: 0.5em 1em;
 	border-radius: 4px;
-	z-index: 10;
 }
 
 .Saltatu:focus {

@@ -69,8 +69,7 @@
 	border-collapse: collapse;
 }
 
-.Partehartzaile_deskribapena th,
-.Partehartzaile_deskribapena td {
+.Partehartzaile_deskribapena th, .Partehartzaile_deskribapena td {
 	text-align: left;
 	padding: 0.4em 0;
 	border-bottom: 1px solid #c3d4f5;
@@ -81,7 +80,6 @@
 	width: 7em;
 }
 
-.Partehartzaile_deskribapena tr:last-child th,
-.Partehartzaile_deskribapena tr:last-child td {
+.Partehartzaile_deskribapena tr:last-child th, .Partehartzaile_deskribapena tr:last-child td {
 	border-bottom: 0;
 }
