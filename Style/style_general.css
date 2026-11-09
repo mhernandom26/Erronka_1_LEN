@@ -176,21 +176,13 @@ footer {
 	height: 28px;
 }
 
-/* Cookie oharra*/
-#Cookie_onartu {
+/* Cookie oharra (#cookies): beti ikusgai, behealdean finkatuta, sare sozialen gainean (onartu arte) */
+#cookies {
 	position: fixed;
-	top: 0;
-	left: 0;
-	opacity: 0;
-}
-
-#Cookie_onartu:checked + #Cookie_oharra {
-	display: none;
-}
-
-#Cookie_oharra {
-	position: sticky;
 	bottom: 3em;
+	left: 0;
+	right: 0;
+	z-index: 10;
 	background-color: #0a1a3f;
 	color: white;
 	padding: 1em;
@@ -201,20 +193,33 @@ footer {
 	gap: 1em;
 }
 
-#Cookie_oharra p {
+#cookies p {
 	margin: 0;
 }
 
-#Cookie_oharra a {
-	color: white;
-	text-decoration: underline;
+#cookies > div {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
 }
 
-#Cookie_botoia {
-	background-color: #0057ff;
+#cookies a {
 	color: white;
 	border-radius: 4px;
 	padding: 0.7em 1.2em;
+	text-decoration: none;
+}
+
+#cookies #accept {
+	background-color: #0057ff;
+}
+
+#cookies #customize {
+	border: 1px solid white;
+}
+
+#cookies a:hover {
+	text-decoration: underline;
 }
 
 @media (max-width: 768px) {

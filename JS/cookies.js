@@ -1,24 +1,28 @@
-/* Cookie oharra: onarpena gogoratzen du */
+/* Cookie oharra (#cookies): edozein botoi sakatzean desagertzen da eta aukera gogoratzen da */
 (function () {
 	"use strict";
 
 	var gakoa = "cookie_onarpena";
-	var kutxa = document.getElementById("Cookie_onartu");
-	if (!kutxa) { return; }
+	var blokea = document.getElementById("cookies");
+	if (!blokea) { return; }
 
-	/* Aurretik onartu bada, oharra ezkutatu */
+	/* Aurretik aukeratu bada, oharra ezkutatu */
 	try {
 		if (localStorage.getItem(gakoa) === "bai") {
-			kutxa.checked = true;
+			blokea.style.display = "none";
+			return;
 		}
 	} catch (errorea) {}
 
-	/* Onartzean, aukera gorde */
-	kutxa.addEventListener("change", function () {
-		try {
-			if (kutxa.checked) {
+	/* Edozein botoi sakatzean, oharra ezkutatu eta aukera gorde */
+	var botoiak = blokea.querySelectorAll("a");
+	for (var i = 0; i < botoiak.length; i++) {
+		botoiak[i].addEventListener("click", function (gertaera) {
+			gertaera.preventDefault();
+			blokea.style.display = "none";
+			try {
 				localStorage.setItem(gakoa, "bai");
-			}
-		} catch (errorea) {}
-	});
+			} catch (errorea) {}
+		});
+	}
 })();
