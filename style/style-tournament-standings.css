@@ -53,7 +53,7 @@ main {
 }
 
 .izena {
-	overflow-wrap: anywhere;
+	white-space: nowrap;
 }
 
 .emaitza {
@@ -77,9 +77,16 @@ main {
 
 /* PC: koadro osoa agertzea eta mugikorrean sailkapena lista bezala agertzen da */
 @media (min-width: 1400px) {
+
+	#Eduki-nagusia {
+		max-width: 90%;
+		padding: 1em 0.5em;
+	}
+
 	.koadroa {
 		display: flex;
 		gap: 1em;
+		
 	}
 
 	.erronda {
@@ -118,5 +125,9 @@ main {
 
 	.finala .blokea {
 		grid-row: span 8;
+	}
+
+	.irabazlea .blokea {
+		grid-row: span 6;
 	}
 }

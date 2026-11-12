@@ -41,17 +41,22 @@
 		</header>
 		<hr>
 		<main id="Partehartzaile-guztiak">
+			<!--Orrialdekatzea HTML + CSS hutsez: radio ezkutuek zein bikote ikusten den erabakitzen dute-->
+			<input class="Orria-aukera" type="radio" name="orria" id="Orria-1" checked aria-label="1. orria: lehen bi parte-hartzaileak">
+			<input class="Orria-aukera" type="radio" name="orria" id="Orria-2" aria-label="2. orria: azken bi parte-hartzaileak">
+
+			<div id="Partehartzaile-sareta">
 			<div class="Partehartzaile-kutxa" id="Partehartzailea1">
-				<p class="Izena">Patxi</p>
+				<p class="Izena">Iñigo Goikoetxea</p>
 				<div class="Argazki-kutxa">
-					<img class="Partehartzaile-irudia" src="../images/participant1.jpg" alt="Patxi jokalariaren avatarra" width="400" height="400"> 				
+					<img class="Partehartzaile-irudia" src="../images/participant1.jpg" alt="Jokalariaren avatarra"> 				
 					<p class="Subtituloa">Torneo oso polita da hau</p>
 				</div>
 				<div class="Partehartzaile-deskribapena">
 					<table>
 						<tr>
 							<th>Izena:</th>
-							<td>Patxi</td>
+							<td>Iñigo Goikoetxea</td>
 						</tr>
 						<tr>
 							<th>Adina:</th>
@@ -65,21 +70,22 @@
 							<th>Herria:</th>
 							<td>Santurtzi (Bizkaia)</td>
 						</tr>
+						
 					</table>
 				</div>
 			</div>
 
 			<div class="Partehartzaile-kutxa" id="Partehartzailea2">
-				<p class="Izena">Paco</p>   
+				<p class="Izena">Erik Arrieta</p>   
 				<div class="Argazki-kutxa">
-					<img class="Partehartzaile-irudia" src="../images/participant2.jpg" alt="Paco jokalariaren avatarra" width="400" height="400">
+					<img class="Partehartzaile-irudia" src="../images/participant2.jpg" alt="Jokalariaren avatarra">
 					<p class="Subtituloa" lang="es">Egun on</p>			
 				</div>
 				<div class="Partehartzaile-deskribapena">
 					<table>
 						<tr>
 							<th>Izena:</th>
-							<td>Paco</td>
+							<td>Erik Arrieta</td>
 						</tr>
 						<tr>
 							<th>Adina:</th>
@@ -98,16 +104,16 @@
 			</div>
 
 			<div class="Partehartzaile-kutxa" id="Partehartzailea3">
-				<p class="Izena">Jhon Geteasinco</p>						
+				<p class="Izena">Raul Vidal</p>						
 				<div class="Argazki-kutxa">
-					<img class="Partehartzaile-irudia" src="../images/participant3.jpg" alt="Jhon Geteasinco jokalariaren avatarra" width="400" height="400">                       
+					<img class="Partehartzaile-irudia" src="../images/participant3.jpg" alt="Jokalariaren avatarra">                       
 					<p class="Subtituloa" lang="es">Anotop At</p>
 				</div>
 				<div class="Partehartzaile-deskribapena">
 					<table>
 						<tr>
 							<th>Izena:</th>
-							<td>Jhon Geteasinco</td>
+							<td>Raul Vidal</td>
 						</tr>
 						<tr>
 							<th>Adina:</th>
@@ -123,6 +129,41 @@
 						</tr>
 					</table>
 				</div>
+			</div>
+
+			<div class="Partehartzaile-kutxa" id="Partehartzailea4">
+				<p class="Izena">Antonio Salazar</p>
+				<div class="Argazki-kutxa">
+					<img class="Partehartzaile-irudia" src="../images/participant4.jpg" alt="Jokalariaren avatarra"> 				
+					<p class="Subtituloa">Torneo oso polita da hau</p>
+				</div>
+				<div class="Partehartzaile-deskribapena">
+					<table>
+						<tr>
+							<th>Izena:</th>
+							<td>Antonio Salazar</td>
+						</tr>
+						<tr>
+							<th>Adina:</th>
+							<td>28 urte</td>
+						</tr>
+						<tr>
+							<th>Herrialdea:</th>
+							<td>Espainia</td>
+						</tr>
+						<tr>
+							<th>Herria:</th>
+							<td>Santurtzi (Bizkaia)</td>
+						</tr>
+						
+					</table>
+				</div>
+			</div>
+			</div>
+
+			<div class="Orri-botoiak">
+				<label class="Orri-botoia" id="Botoia-aurrekoak" for="Orria-1">&larr; Aurrekoak</label>
+				<label class="Orri-botoia" id="Botoia-hurrengoak" for="Orria-2">Hurrengoak &rarr;</label>
 			</div>
 		</main>
 

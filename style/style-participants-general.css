@@ -1,10 +1,70 @@
 /* Hau participants-general.html-ko espezifikoa da */
 
 #Partehartzaile-guztiak {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 2em;
 	padding: 2em 1em;
+	position: relative;
+}
+
+/* Bi parte-hartzaile aldi berean: eskuineko eta ezkerreko arearen arabera */
+#Partehartzaile-sareta {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: "ezkerra eskuina";
+	gap: 2em;
+}
+
+/* 1. eta 3. ezkerrean; 2. eta 4. eskuinean (aldi berean bi bakarrik daude ikusgai) */
+#Partehartzailea1, #Partehartzailea3 { grid-area: ezkerra; }
+#Partehartzailea2, #Partehartzailea4 { grid-area: eskuina; }
+
+/* Radio ezkutuak: ikusten ez dira baina teklatuarekin fokua hartu dezakete */
+.Orria-aukera {
+	position: absolute;
+	opacity: 0;
+	width: 1px;
+	height: 1px;
+	pointer-events: none;
+}
+
+/* 1. orria aukeratuta: 3 eta 4 ezkutatu. 2. orria aukeratuta: 1 eta 2 ezkutatu */
+#Orria-1:checked ~ #Partehartzaile-sareta #Partehartzailea3,
+#Orria-1:checked ~ #Partehartzaile-sareta #Partehartzailea4,
+#Orria-2:checked ~ #Partehartzaile-sareta #Partehartzailea1,
+#Orria-2:checked ~ #Partehartzaile-sareta #Partehartzailea2 {
+	display: none;
+}
+
+/* Botoiak */
+.Orri-botoiak {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2em;
+}
+
+.Orri-botoia {
+	background-color: #0057ff;
+	color: white;
+	border-radius: 4px;
+	padding: 0.7em 1.2em;
+	cursor: pointer;
+	user-select: none;
+}
+
+.Orri-botoia:hover {
+	background-color: #003f99;
+}
+
+/* Orrian ez dagoen botoia ezkutatu (lekua gordetzen da) */
+#Orria-1:checked ~ .Orri-botoiak #Botoia-aurrekoak,
+#Orria-2:checked ~ .Orri-botoiak #Botoia-hurrengoak {
+	visibility: hidden;
+}
+
+/* Teklatuarekin nabigatzean, fokua dagokion botoian ikusi */
+#Orria-1:focus-visible ~ .Orri-botoiak #Botoia-aurrekoak,
+#Orria-2:focus-visible ~ .Orri-botoiak #Botoia-hurrengoak {
+	outline: 3px solid #0a1a3f;
+	outline-offset: 2px;
 }
 
 .Argazki-kutxa {
@@ -42,8 +102,15 @@
 
 @media (max-width: 768px) {
 	#Partehartzaile-guztiak {
-		grid-template-columns: 1fr;
 		padding: 1em;
+	}
+
+	/* Mugikorrean bi parte-hartzaileak bata bestearen azpian */
+	#Partehartzaile-sareta {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"ezkerra"
+			"eskuina";
 	}
 
 	.Partehartzaile-kutxa {
@@ -53,7 +120,7 @@
 		padding-top: 1.5em;
 	}
 
-	#Partehartzailea1 {
+	#Partehartzailea1, #Partehartzailea3 {
 		border-top: none;
 		padding-top: 0;
 	}
