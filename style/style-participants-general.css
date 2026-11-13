@@ -5,7 +5,7 @@
 	position: relative;
 }
 
-/* Bi parte-hartzaile aldi berean: eskuineko eta ezkerreko arearen arabera */
+/* Bi parte-hartzaile aldi berean: ezkerra eta eskuina */
 #Partehartzaile-sareta {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -13,9 +13,55 @@
 	gap: 2em;
 }
 
-/* 1. eta 3. ezkerrean; 2. eta 4. eskuinean (aldi berean bi bakarrik daude ikusgai) */
-#Partehartzailea1, #Partehartzailea3 { grid-area: ezkerra; }
-#Partehartzailea2, #Partehartzailea4 { grid-area: eskuina; }
+/* Lehenespenez ezkutuan; aukeratutako orriko bi parte-hartzaileak bakarrik erakusten dira */
+.Partehartzaile-kutxa {
+	display: none;
+	min-width: 0;
+}
+
+/* Zenbaki bakoitiak ezkerrean, bikoitiak eskuinean */
+.Partehartzaile-kutxa:nth-child(odd) {
+	grid-area: ezkerra;
+}
+
+.Partehartzaile-kutxa:nth-child(even) {
+	grid-area: eskuina;
+}
+
+#Orria-1:checked ~ #Partehartzaile-sareta #Partehartzailea1,
+#Orria-1:checked ~ #Partehartzaile-sareta #Partehartzailea2,
+#Orria-2:checked ~ #Partehartzaile-sareta #Partehartzailea3,
+#Orria-2:checked ~ #Partehartzaile-sareta #Partehartzailea4,
+#Orria-3:checked ~ #Partehartzaile-sareta #Partehartzailea5,
+#Orria-3:checked ~ #Partehartzaile-sareta #Partehartzailea6,
+#Orria-4:checked ~ #Partehartzaile-sareta #Partehartzailea7,
+#Orria-4:checked ~ #Partehartzaile-sareta #Partehartzailea8,
+#Orria-5:checked ~ #Partehartzaile-sareta #Partehartzailea9,
+#Orria-5:checked ~ #Partehartzaile-sareta #Partehartzailea10,
+#Orria-6:checked ~ #Partehartzaile-sareta #Partehartzailea11,
+#Orria-6:checked ~ #Partehartzaile-sareta #Partehartzailea12,
+#Orria-7:checked ~ #Partehartzaile-sareta #Partehartzailea13,
+#Orria-7:checked ~ #Partehartzaile-sareta #Partehartzailea14,
+#Orria-8:checked ~ #Partehartzaile-sareta #Partehartzailea15,
+#Orria-8:checked ~ #Partehartzaile-sareta #Partehartzailea16,
+#Orria-9:checked ~ #Partehartzaile-sareta #Partehartzailea17,
+#Orria-9:checked ~ #Partehartzaile-sareta #Partehartzailea18,
+#Orria-10:checked ~ #Partehartzaile-sareta #Partehartzailea19,
+#Orria-10:checked ~ #Partehartzaile-sareta #Partehartzailea20,
+#Orria-11:checked ~ #Partehartzaile-sareta #Partehartzailea21,
+#Orria-11:checked ~ #Partehartzaile-sareta #Partehartzailea22,
+#Orria-12:checked ~ #Partehartzaile-sareta #Partehartzailea23,
+#Orria-12:checked ~ #Partehartzaile-sareta #Partehartzailea24,
+#Orria-13:checked ~ #Partehartzaile-sareta #Partehartzailea25,
+#Orria-13:checked ~ #Partehartzaile-sareta #Partehartzailea26,
+#Orria-14:checked ~ #Partehartzaile-sareta #Partehartzailea27,
+#Orria-14:checked ~ #Partehartzaile-sareta #Partehartzailea28,
+#Orria-15:checked ~ #Partehartzaile-sareta #Partehartzailea29,
+#Orria-15:checked ~ #Partehartzaile-sareta #Partehartzailea30,
+#Orria-16:checked ~ #Partehartzaile-sareta #Partehartzailea31,
+#Orria-16:checked ~ #Partehartzaile-sareta #Partehartzailea32 {
+	display: block;
+}
 
 /* Radio ezkutuak: ikusten ez dira baina teklatuarekin fokua hartu dezakete */
 .Orria-aukera {
@@ -26,22 +72,17 @@
 	pointer-events: none;
 }
 
-/* 1. orria aukeratuta: 3 eta 4 ezkutatu. 2. orria aukeratuta: 1 eta 2 ezkutatu */
-#Orria-1:checked ~ #Partehartzaile-sareta #Partehartzailea3,
-#Orria-1:checked ~ #Partehartzaile-sareta #Partehartzailea4,
-#Orria-2:checked ~ #Partehartzaile-sareta #Partehartzailea1,
-#Orria-2:checked ~ #Partehartzaile-sareta #Partehartzailea2 {
-	display: none;
-}
-
-/* Botoiak */
+/* Botoiak: aurrekoa ezkerrean, orri zenbakia erdian, hurrengoa eskuinean */
 .Orri-botoiak {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	align-items: center;
+	gap: 1em;
 	margin-top: 2em;
 }
 
 .Orri-botoia {
+	display: none;
 	background-color: #0057ff;
 	color: white;
 	border-radius: 4px;
@@ -54,15 +95,119 @@
 	background-color: #003f99;
 }
 
-/* Orrian ez dagoen botoia ezkutatu (lekua gordetzen da) */
-#Orria-1:checked ~ .Orri-botoiak #Botoia-aurrekoak,
-#Orria-2:checked ~ .Orri-botoiak #Botoia-hurrengoak {
-	visibility: hidden;
+.Aurrekoa {
+	grid-column: 1;
+	justify-self: start;
 }
 
-/* Teklatuarekin nabigatzean, fokua dagokion botoian ikusi */
-#Orria-1:focus-visible ~ .Orri-botoiak #Botoia-aurrekoak,
-#Orria-2:focus-visible ~ .Orri-botoiak #Botoia-hurrengoak {
+.Hurrengoa {
+	grid-column: 3;
+	justify-self: end;
+}
+
+.Orri-zenbakia {
+	display: none;
+	grid-column: 2;
+	color: #3f5185;
+}
+
+/* Aukeratutako orriari dagozkion botoiak eta zenbakia erakutsi */
+#Orria-1:checked ~ .Orri-botoiak .Orri-zenbakia-1,
+#Orria-1:checked ~ .Orri-botoiak .Hurrengoa-2 {
+	display: inline-block;
+}
+
+#Orria-2:checked ~ .Orri-botoiak .Orri-zenbakia-2,
+#Orria-2:checked ~ .Orri-botoiak .Aurrekoa-1,
+#Orria-2:checked ~ .Orri-botoiak .Hurrengoa-3 {
+	display: inline-block;
+}
+
+#Orria-3:checked ~ .Orri-botoiak .Orri-zenbakia-3,
+#Orria-3:checked ~ .Orri-botoiak .Aurrekoa-2,
+#Orria-3:checked ~ .Orri-botoiak .Hurrengoa-4 {
+	display: inline-block;
+}
+
+#Orria-4:checked ~ .Orri-botoiak .Orri-zenbakia-4,
+#Orria-4:checked ~ .Orri-botoiak .Aurrekoa-3,
+#Orria-4:checked ~ .Orri-botoiak .Hurrengoa-5 {
+	display: inline-block;
+}
+
+#Orria-5:checked ~ .Orri-botoiak .Orri-zenbakia-5,
+#Orria-5:checked ~ .Orri-botoiak .Aurrekoa-4,
+#Orria-5:checked ~ .Orri-botoiak .Hurrengoa-6 {
+	display: inline-block;
+}
+
+#Orria-6:checked ~ .Orri-botoiak .Orri-zenbakia-6,
+#Orria-6:checked ~ .Orri-botoiak .Aurrekoa-5,
+#Orria-6:checked ~ .Orri-botoiak .Hurrengoa-7 {
+	display: inline-block;
+}
+
+#Orria-7:checked ~ .Orri-botoiak .Orri-zenbakia-7,
+#Orria-7:checked ~ .Orri-botoiak .Aurrekoa-6,
+#Orria-7:checked ~ .Orri-botoiak .Hurrengoa-8 {
+	display: inline-block;
+}
+
+#Orria-8:checked ~ .Orri-botoiak .Orri-zenbakia-8,
+#Orria-8:checked ~ .Orri-botoiak .Aurrekoa-7,
+#Orria-8:checked ~ .Orri-botoiak .Hurrengoa-9 {
+	display: inline-block;
+}
+
+#Orria-9:checked ~ .Orri-botoiak .Orri-zenbakia-9,
+#Orria-9:checked ~ .Orri-botoiak .Aurrekoa-8,
+#Orria-9:checked ~ .Orri-botoiak .Hurrengoa-10 {
+	display: inline-block;
+}
+
+#Orria-10:checked ~ .Orri-botoiak .Orri-zenbakia-10,
+#Orria-10:checked ~ .Orri-botoiak .Aurrekoa-9,
+#Orria-10:checked ~ .Orri-botoiak .Hurrengoa-11 {
+	display: inline-block;
+}
+
+#Orria-11:checked ~ .Orri-botoiak .Orri-zenbakia-11,
+#Orria-11:checked ~ .Orri-botoiak .Aurrekoa-10,
+#Orria-11:checked ~ .Orri-botoiak .Hurrengoa-12 {
+	display: inline-block;
+}
+
+#Orria-12:checked ~ .Orri-botoiak .Orri-zenbakia-12,
+#Orria-12:checked ~ .Orri-botoiak .Aurrekoa-11,
+#Orria-12:checked ~ .Orri-botoiak .Hurrengoa-13 {
+	display: inline-block;
+}
+
+#Orria-13:checked ~ .Orri-botoiak .Orri-zenbakia-13,
+#Orria-13:checked ~ .Orri-botoiak .Aurrekoa-12,
+#Orria-13:checked ~ .Orri-botoiak .Hurrengoa-14 {
+	display: inline-block;
+}
+
+#Orria-14:checked ~ .Orri-botoiak .Orri-zenbakia-14,
+#Orria-14:checked ~ .Orri-botoiak .Aurrekoa-13,
+#Orria-14:checked ~ .Orri-botoiak .Hurrengoa-15 {
+	display: inline-block;
+}
+
+#Orria-15:checked ~ .Orri-botoiak .Orri-zenbakia-15,
+#Orria-15:checked ~ .Orri-botoiak .Aurrekoa-14,
+#Orria-15:checked ~ .Orri-botoiak .Hurrengoa-16 {
+	display: inline-block;
+}
+
+#Orria-16:checked ~ .Orri-botoiak .Orri-zenbakia-16,
+#Orria-16:checked ~ .Orri-botoiak .Aurrekoa-15 {
+	display: inline-block;
+}
+
+/* Teklatuarekin nabigatzean, fokua botoietan ikusi */
+.Orria-aukera:focus-visible ~ .Orri-botoiak .Orri-botoia {
 	outline: 3px solid #0a1a3f;
 	outline-offset: 2px;
 }
@@ -85,6 +230,7 @@
 	text-align: center;
 	font-weight: bold;
 	margin-bottom: 0.5em;
+	min-height: 1.5em;
 }
 
 .Subtituloa {
@@ -100,12 +246,17 @@
 	border-bottom-right-radius: 0.5em;
 }
 
+/* Subtitulurik ez badago, ez da barra ilunik agertzen */
+.Subtituloa:empty {
+	display: none;
+}
+
 @media (max-width: 768px) {
 	#Partehartzaile-guztiak {
 		padding: 1em;
 	}
 
-	/* Mugikorrean bi parte-hartzaileak bata bestearen azpian */
+	/* Mugikorrean orriko bi parte-hartzaileak bata bestearen azpian */
 	#Partehartzaile-sareta {
 		grid-template-columns: 1fr;
 		grid-template-areas:
@@ -120,14 +271,10 @@
 		padding-top: 1.5em;
 	}
 
-	#Partehartzailea1, #Partehartzailea3 {
+	.Partehartzaile-kutxa:nth-child(odd) {
 		border-top: none;
 		padding-top: 0;
 	}
-}
-
-.Partehartzaile-kutxa {
-	min-width: 0;
 }
 
 .Partehartzaile-deskribapena table {
@@ -141,6 +288,7 @@
 	padding: 0.4em 0;
 	border-bottom: 1px solid #c3d4f5;
 	overflow-wrap: anywhere;
+	height: 1.5em;
 }
 
 .Partehartzaile-deskribapena th {
