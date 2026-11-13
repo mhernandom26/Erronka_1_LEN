@@ -4,12 +4,11 @@
 5-Poner la informacion de la empresa en el footer  (Hecho)
 6-Que los enlaces del navegador de abajo manden a algun sitio (Hecho)
 7-Cambiar los placeholder por texto con sentido (Hecho)
-8-Cambiar a Diomande, Vinicius y Tebas por otros participantes (mas o menos)
+8-Cambiar a Diomande, Vinicius y Tebas por otros participantes (Hecho)
 8-Darle un diseño bonito a las paginas para que no quede tan cutre (Hecho)
 9-Mirar que tal va el seo (Hecho)
 10-Mejorar el seo, accesibilidad, performance, etc... y comprobar con lighthouse (Hecho, sale todo bien menos performance con un 95)
 11-Buscar si hay alguna etiqueta repetida, no usada, mal escrita, etc... (Hecho)
 12-Hacer las explicaciones en las paginas y styles que hagan falta (Hecho)
 13-Preguntar si hace falta lo de javascript para guardar las cookies o si con solo el banner vale(hecho)
-14-Preguntar si hace falta algo
-15-Poner los 32 participantes por equipos en participants-general y hacer los botones para ir para alante y para atras.
+15-Poner los 32 participantes por equipos en participants-general y hacer los botones para ir para alante y para atras. (Hecho)
